@@ -304,8 +304,9 @@ h4 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: 100% 100%;
-  filter: blur(4px);
+  filter: blur(7px);
   z-index: -1;
+  -webkit-filter: blur(7px);
 }
 .column {
   text-align: center;

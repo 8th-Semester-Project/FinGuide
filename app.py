@@ -90,7 +90,7 @@ def predict():
             data = np.array([[age,bmi,children,smoker,sex,region]])
             my_prediction = insurance_model.predict(data)
             
-            return render_template('result.html', prediction=my_prediction)
+            return render_template('result.html', prediction=my_prediction/100)
         
         elif(len([float(x) for x in request.form.values()])==7):
             area = float(request.form['area'])
